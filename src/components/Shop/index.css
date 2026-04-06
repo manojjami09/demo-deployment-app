@@ -1,0 +1,32 @@
+.shop-container{
+    display: flex;
+    padding: 20px;
+    padding-left: 2%;
+}
+.filter-bar{
+    margin-top: 8rem;
+    width: 30vw;
+    padding-left: 30px;
+    padding-top: 10px;
+   
+}
+.filters{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 30px;
+}
+.all-products{
+    margin-top: 20px;
+    width: 130vw;
+}
+.products-bar{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 30px;
+    padding-left: 3rem;
+}
+.range{
+    margin-right: 1em;
+}

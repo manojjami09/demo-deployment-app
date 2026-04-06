@@ -1,0 +1,106 @@
+.overlay-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    z-index: 4;
+    text-align: center;
+    
+    
+}
+.carousel-container{
+    position: relative;
+    
+}
+
+.shop-btn{
+    margin-top: 30px;
+    width: 50%;
+    color: white;
+    background-color: #dba974;
+    border: 0px;
+    border-radius: 2px;
+    padding: 8px;
+}
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 40px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none; 
+}
+.arrow {
+  background: none;
+  border: none;
+  font-size: 19px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+  z-index: 1;
+}
+.heading-bestSell{
+    margin-top: 20px;
+    margin-bottom: -20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 29px;
+    
+
+}
+.heading-promo{
+    font-size: 27px; 
+    font-family: "Monaco", "Courier New", monospace;
+    font-weight: 600;   
+}
+.para-promo{
+    font-size: 20px;
+    font-family: "Linotype";
+    font-style: italic; 
+}
+.insta-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f3ef;
+    padding-top: 60px;
+    
+}
+.images-insta{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.img-insta{
+    width: 240px;
+    height: 220px;
+}
+.advantages{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+.para-promo1{
+    font-family: "Linotype";
+    font-style: italic;
+    font-size: 23px;
+}

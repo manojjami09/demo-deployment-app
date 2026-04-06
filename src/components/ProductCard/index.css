@@ -1,0 +1,51 @@
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #a9442e;
+  color: white;
+  padding: 5px 10px;
+  font-style: italic;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+.Name{
+  text-decoration: underline;
+  text-decoration-color: #f8f5f2;
+  color: black;
+}
+
+.Price {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #f8f5f2;
+  color: black;
+}
+.card {
+
+  min-width: 280px;
+  max-width: 280px;
+  background: #f8f5f2;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  max-height: 250px;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 20px; */
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+

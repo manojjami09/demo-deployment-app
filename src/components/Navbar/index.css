@@ -1,0 +1,139 @@
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navbar-container{
+    margin-bottom: 20px;
+}
+.right-bar{
+    display: flex;
+    gap: 20px;
+}
+.cart-icon {
+  position: relative;
+  display: inline-block;
+  margin-top: 9px;
+  margin-right: 10px;
+}
+
+.cart-icon i {
+  font-size: 1.5rem;
+  color: black; /* adjust if needed */
+}
+
+.cart-badge {
+  position: absolute;
+  top: -12px;
+  right: -10px;
+  background: #b28949;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  line-height: 1;
+}
+
+
+
+.icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+}
+.logo{
+    padding: 10px;
+}
+.logo-name{
+    font-family: "Linotype";
+    font-style: italic;
+    margin-left: 1rem;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.nav-button{
+    border: 0px;
+    background-color: white;
+}
+.search-bar {
+  border: none;
+  border-bottom: 1px solid #a9442e; /* Brown underline */
+  outline: none;
+  padding: 5px 28px 5px 28px; /* Space for icon */
+  font-size: 16px;
+  color: #a9442e;
+  background: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg fill='brown' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M505 442.7L405.3 343a208.1 208.1 0 1 0-62.3 62.3L442.7 505a20 20 0 0 0 28.3-28.3zM208 368a160 160 0 1 1 0-320 160 160 0 0 1 0 320z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 4px center;
+  background-size: 18px;
+}
+.navbar-links{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-left: 8rem;
+}
+.navbar-bottom{
+    display: flex;
+    justify-content: center;
+}
+.nav-link{
+    text-decoration: none;
+    font-family: "calibri";
+    font-size: 20px;   
+}
+.login-out{
+  background-color: #c59d5f;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-out :hover {
+  background-color: #b28949;
+}
+.cart{
+    margin-top: 1px;
+    color : black;
+    font-size: 25px;
+    
+}
+
+.profile {
+  position: relative;
+  cursor: pointer;
+  margin-left: 1rem;
+  display: inline-block;
+  font-size:20px;
+  margin-right:8px;
+  margin-top: 6px;
+}
+
+.profile-dropdown {
+  display: none;
+  white-space: nowrap;
+  z-index: 10;
+  right: 100%;   /* ✅ places it to the left */
+  top: 70%;
+  transform: translateY(-50%); /* vertically align with icon */
+  position: absolute;
+}
+
+.profile:hover .profile-dropdown {
+  display: block;
+}
+
+
+
+
+

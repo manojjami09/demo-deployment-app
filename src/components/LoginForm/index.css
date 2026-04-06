@@ -1,0 +1,77 @@
+/* index.css */
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: 'Georgia', serif;
+}
+
+.login-card {
+  background: #fff;
+  padding: 40px 60px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.brand-name {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.login-heading {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.login-card label {
+  font-weight: 500;
+  color: #333;
+}
+
+.login-card input {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-card button {
+  background-color: #c59d5f;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: #b28949;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+}
+.or-divider{
+  text-align: center;
+  font-weight: bold;
+}
+.g-image{
+  height: 25px;
+  margin-right: 10px;
+  
+}

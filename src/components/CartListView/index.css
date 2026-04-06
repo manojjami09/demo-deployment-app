@@ -1,0 +1,68 @@
+.cart-list {
+  padding-left: 0px;
+}
+.cart-list-view-container{
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-between;
+  
+}
+.cart-total-container{
+  display: flex;
+  justify-content: end;
+}
+
+.checkout-btn {
+  background-color: #0baf67;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-left: 2rem;
+}
+
+.checkout-btn:hover {
+  transform: scale(1.05);
+  
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  animation: fadeIn 0.8s ease-in-out;
+  text-align: center;
+}
+
+.checkmark-circle {
+  font-size: 72px;
+  color: #0baf67;
+  animation: pop 0.6s ease forwards;
+}
+
+.order-message {
+  font-size: 28px;
+  margin: 16px 0 8px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.thank-you-msg {
+  color: #444;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
