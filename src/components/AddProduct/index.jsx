@@ -1,5 +1,6 @@
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebaseconfig";
+const API = import.meta.env.VITE_API_URL;
 
 const AddProduct = () => {
   const addProduct = async () => {

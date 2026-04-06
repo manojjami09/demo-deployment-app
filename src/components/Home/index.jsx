@@ -4,6 +4,7 @@ import './index.css';
 import Navbar from '../../components/Navbar';
 import axios from "axios";
 import Cookies from "js-cookie";
+const API = import.meta.env.VITE_API_URL;
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -14,7 +15,7 @@ export default function Home() {
         // Get token from cookies (or localStorage if you stored it there)
         const token = Cookies.get("jwt_token");
         // or Cookies.get("jwt_token") if you used cookies
-        const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/newArrivals`, {
+        const response = await axios.get(`${API}/api/newArrivals`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

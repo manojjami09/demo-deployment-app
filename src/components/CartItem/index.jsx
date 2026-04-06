@@ -3,6 +3,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { useContext } from "react";
 import CartContext from "../../context/CartContext";
 import "./index.css";
+const API = import.meta.env.VITE_API_URL;
 
 const CartItem = ({ cartItemDetails }) => {
   if (!cartItemDetails) return null;

@@ -6,6 +6,7 @@ import ProductsHeader from '../../components/ProductsHeader';
 import axios from "axios";
 import Cookies from "js-cookie";
 import jwtDecode from "jwt-decode"; // ✅ to decode userId from token
+const API = import.meta.env.VITE_API_URL;
 
 const sortbyOptions = [
   { optionId: 'PRICE_HIGH', displayText: 'Price (High-Low)' },
@@ -35,7 +36,7 @@ export default function Shop() {
   const fetchProducts = async () => {
     try {
       const token = Cookies.get("jwt_token");
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/products`, {
+      const response = await axios.get(`${API}/api/products`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

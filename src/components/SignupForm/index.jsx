@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router'
 import axios from 'axios'
 import './index.css'
+const API = import.meta.env.VITE_API_URL;
 
 const SignupForm = () => {
   const [username, setUsername] = useState('')
@@ -35,7 +36,7 @@ const SignupForm = () => {
     }
 
     try {
-      await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/signup`, {
+      await axios.post(`${API}/api/auth/signup`, {
         username,
         password,
         email

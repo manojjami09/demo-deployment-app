@@ -6,6 +6,7 @@ import jwtDecode from "jwt-decode";
 import { useContext } from "react";
 import CartContext from "../../context/CartContext";
 import "./index.css";
+const API = import.meta.env.VITE_API_URL;
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -17,7 +18,7 @@ const LoginForm = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/login`, { username, password });
+      const response = await axios.post(`${API}/api/auth/login`, { username, password });
       const token = response.data.token;
       Cookies.set("jwt_token", token, { expires: 7 });
 

@@ -6,6 +6,7 @@ import CartContext from "../../context/CartContext";
 import axios from "axios";
 import Cookies from "js-cookie";
 import "./index.css";
+const API = import.meta.env.VITE_API_URL;
 
 const Cart = () => {
   const { cartList, setCartList, userId, deleteCartItem, clearCart } =
@@ -21,7 +22,7 @@ const Cart = () => {
 
     setLoading(true);
     axios
-      .get(`${import.meta.env.VITE_API_URL}/api/cart/${userId}`, {
+      .get(`${API}/api/cart/${userId}`, {
         headers: { Authorization: `Bearer ${token}` },
         withCredentials: true,
       })

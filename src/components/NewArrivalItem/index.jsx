@@ -8,6 +8,7 @@ import axios from "axios";
 import "./index.css";
 import jwtDecode from "jwt-decode";
 import CartContext from "../../context/CartContext"; // ✅ import context
+const API = import.meta.env.VITE_API_URL;
 
 const NewArrivalItem = () => {
   const [newArrival, setNewArrival] = useState(null);
@@ -33,7 +34,7 @@ const NewArrivalItem = () => {
 
       // ✅ use correct backend endpoint: /add
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/cart/${userId}/add`,
+        `${API}/api/cart/${userId}/add`,
         null,
         {
           params: {
@@ -66,7 +67,7 @@ const NewArrivalItem = () => {
         const token = Cookies.get("jwt_token");
 
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/newArrivals/${id}`,
+          `${API}/api/newArrivals/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
