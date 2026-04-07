@@ -1,7 +1,7 @@
 import CartItem from "../CartItem";
 import "./index.css";
 
-const CartListView = ({ cartItems = [], onDeleteItem, onClearCart, onOrderPlaced }) => {
+const CartListView = ({ cartItems = [], onDeleteItem, onOrderPlaced }) => {
   const safeCartItems = Array.isArray(cartItems) ? cartItems : [];
 
   const getCartTotal = () =>

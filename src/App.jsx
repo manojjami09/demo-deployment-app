@@ -17,8 +17,6 @@ import CartContext from "./context/CartContext";
 export default function App() {
   const [cartList, setCartList] = useState([]);
   const [userId, setUserId] = useState(null);
-  const [user, setUser] = useState(null);
-
   // Axios instance
   const api = axios.create({
     baseURL: `${import.meta.env.VITE_API_URL}/api/cart`,
@@ -43,7 +41,6 @@ export default function App() {
         // { userId: 1, username: "Manoj", email: "manoj@gmail.com", ... }
         if (decoded.userId) {
           setUserId(decoded.userId);
-          setUser({ username: decoded.username, email: decoded.email }); // ✅ store full user
         }
       } catch (err) {
         console.error("Invalid JWT token:", err);

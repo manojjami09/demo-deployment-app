@@ -6,6 +6,8 @@ import "./index.css";
 const API = import.meta.env.VITE_API_URL;
 
 const CartItem = ({ cartItemDetails }) => {
+  const { deleteCartItem, updateQuantity } = useContext(CartContext);
+
   if (!cartItemDetails) return null;
 
   const { id, product, newArrival, quantity = 0 } = cartItemDetails;
@@ -15,8 +17,6 @@ const CartItem = ({ cartItemDetails }) => {
   if (!item) return null;
 
   const { name = "Item", price = 0, image = "" } = item;
-
-  const { deleteCartItem, updateQuantity } = useContext(CartContext);
 
   const handleDecrease = () => {
     if (quantity > 1) updateQuantity(id, quantity - 1);

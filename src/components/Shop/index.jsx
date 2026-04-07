@@ -103,6 +103,7 @@ export default function Shop() {
       sortedProducts.sort((a, b) => a.price - b.price);
     }
     setFilteredProducts(sortedProducts);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeOptionId]);
 
   // ✅ Price filter

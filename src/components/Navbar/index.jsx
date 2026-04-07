@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 import CartContext from "../../context/CartContext";
 import jwtDecode from "jwt-decode"; // npm install jwt-decode
 
-export default function Navbar({ onSearch }) {
+export default function Navbar() {
   const [searchInput, setSearchInput] = useState("");
   const [username, setUsername] = useState(null);
 

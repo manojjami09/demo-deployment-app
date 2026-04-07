@@ -1,0 +1,18 @@
+﻿
+C:\intellij projects\E-CommerceSample\E-commerce-New\src\App.jsx
+  20:10  error  'user' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\intellij projects\E-CommerceSample\E-commerce-New\src\components\CartItem\index.jsx
+  19:46  error  React Hook "useContext" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?  react-hooks/rules-of-hooks
+
+C:\intellij projects\E-CommerceSample\E-commerce-New\src\components\CartListView\index.jsx
+  4:55  error  'onClearCart' is defined but never used  no-unused-vars
+
+C:\intellij projects\E-CommerceSample\E-commerce-New\src\components\Navbar\index.jsx
+  8:34  error  'onSearch' is defined but never used  no-unused-vars
+
+C:\intellij projects\E-CommerceSample\E-commerce-New\src\components\Shop\index.jsx
+  106:6  warning  React Hook useEffect has a missing dependency: 'filteredProducts'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Γ£û 5 problems (4 errors, 1 warning)
+
